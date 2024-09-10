@@ -1,0 +1,155 @@
+.sidenav {
+    width: 300px;
+    height: 100vh;
+    background-color: #213A57;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+/* Logo section styling */
+  .logo {
+    width: 100%;
+    background-color: #45dfb1;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow effect */
+  }
+  
+  /* Adjust the font size and padding to ensure the text fits well */
+  
+  /* Profile section styling */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .profile h2 {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0; /* ชื่อUser */
+  }
+  
+  .profile hr {
+    width: 130%; /* Adjust the width of the hr to fit within the sidebar */
+    margin: 10px 0; /* Adjust margin to reduce spacing */
+    border: 0;
+    border-top: 1px solid #ffffff;
+  }
+  
+  .menu-title {
+    width: 115%;
+    text-align: left;
+    padding-left: 20px; /* Adjust this padding as needed */
+    margin: 10px 0; /* Adjust margin for spacing */
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  
+  /* Menu section styling */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 0px; /* Keep padding for alignment */
+  }
+  .menu a {
+    margin: auto;
+    width: 55%;
+    height: 35px;
+    padding: 13px 40px;
+    text-decoration: none;
+    color: #34475c;
+    font-size: 18px;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #192B41;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #ffffff;
+    background-color: #45DFB1;
+  }
+  
+  /* Logout button styling */
+  .logout {
+    margin-top: auto;
+    margin-bottom: 15px;
+    padding: 20px 50px;
+    color: #ffffff;
+    background-color: #0B6477;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout:hover {
+    background-color: #45DFB1;
+  }
+  /* Basic sidebar styles */
+  /* Sidebar open/close styles */
+  .sidenav.closed {
+    transform: translateX(-300px); /* Move sidebar out of view */
+  }
+  
+  .sidenav.open {
+    transform: translateX(0); /* Show sidebar */
+  }
+  
+  /* Toggle button styles */
+  .toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 260px; /* Position next to the sidebar */
+    background-color: #004d4d;
+    color: #45DFB1;
+    padding: 10px;
+    border: none;
+    border-radius: 360px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+  
+  .sidenav.closed + .toggle-btn {
+    left: 10px; /* Adjust position when sidebar is closed */
+  }
+  
+  .toggle-btn:hover {
+    background-color: #006666;
+  }
+  .logo-img {
+    margin-top: 15px;
+    width: 310px;
+    margin-left: 15px;
+  }
+  
+  
+  /* Rest of your CSS for logo, profile, menu, etc. remains the same */
+  
+  
